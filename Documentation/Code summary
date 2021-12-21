@@ -1,0 +1,23 @@
+This README file constitutes the code documentation for this Computer Science project.
+Before discussing the layout of our code, it is first important to understand the
+structure of the website from which we are pulling. The basketball-reference.com site
+has statistics on every baskestball ball game that has occurred within this century.
+This site is organized by season. Each season has its own webpage which has a list
+of games that have occurred within that season. For each item in this list, there is a
+link by the name of boxscore, which is where we scraped our data points for each game
+from.
+The code begins with the urlpuller.py file which is used to pull the box score link
+for each game for each season from which we pulled our statistics from. From here,
+we created a separate script by the name of stat_scraper.py that pulls the specified
+statistics from a link provided. We then make use of both of these scripts within the
+pulllers.py script, which is used to created our data set. From here, we experimented
+with ways of interpreting the dataset and transforming it in such a way that would
+make it easier for the neural network to interpret. In order to create a dataset
+that would be more easily interpreted by the neural network. The scripts that
+attempted to omptimize the dataset include statdiff.py, date_remover.py and convNN.py
+(which was used to create the dataset ConvDataSet.py).
+After the dataset is optimized, it is then used in the neural networks named
+secondtensor.py and second_NN.py. These two codes make use of the Keras package within
+TensorFlow in order to make a prediction based on whether or not the outcome of a
+set game will be a win or a loss for the away team.
+

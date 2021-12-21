@@ -1,0 +1,21 @@
+THIS FILE GIVES AN OVERVIEW OVER THE MAIN FILES USED IN THIS PROJECTCRAP FILES
+
+
+urlpuller.py - Generates urls for File_creator.py and pullers.py to use
+
+pullers.py - Scrape Stats of reference website ('https://www.basketball-reference.com') using the urls for the games and teams from urlpuller
+
+File_creator.py - Generate files that contain the scraped data
+
+date_remover.py & date_remover_matteo.py - used to remove date from File_creator.py scraped data txt files (that caused an error)
+
+Data_structure.py - Process data from File_creator.py to turn it into usable format for neural network processing. This has been used to generate the various dataset txt files used
+
+firstensor.py &second_NN.py - Feedforward Neural Networks used for training
+
+statdiff.py - used to modify datasets to play around with the difference between stats
+
+secondtensor.py - Final Neural network using keras tuner to optimize hyperparameters
+
+
+

@@ -1,0 +1,18 @@
+Testing and Validation
+In order to test the web scraping portion of our code, we originally analyzed what was
+scraped. Since each of the links from which we scraped from contained the information
+in a relatively simple format, we decided to compare what was scraped to what was 
+located within the link. After confirming that the data scraped was the same as what
+was located within the link. After this, we went on to scrape the required data 
+from each of the links that were originally scraped. Everything was scraped properly
+as it was all processed by the neural network. However, one season was not being
+scraped for reasons unknown to us at the time. We ultimately ended up not including
+that season within the training data, as it was not important to include consectuive 
+seasons within the training data, as we were not having the neural network learn and
+build off of the individual seasons, but rather, we were using specific games to learn
+the patterns within the specific seasons. At the end of this process, we used the
+predictions that were created by our neural network to test and validate the
+results. We did this by comparing the output of the neural network to the actual
+outcomes of the games we were testing the data on. We were able to confirm that the
+55% success ratio that was created by the neural network was correct, as it was the 
+same success rate that the code had when predicting the outcome of the games.
